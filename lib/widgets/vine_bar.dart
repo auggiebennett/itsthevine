@@ -12,7 +12,6 @@ class VineBar extends StatelessWidget implements PreferredSizeWidget {
     return PreferredSize(
       preferredSize: const Size.fromHeight(500),
       child: AppBar(
-        backgroundColor: const Color(0xFF64685D),
         title: Row(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
@@ -23,26 +22,22 @@ class VineBar extends StatelessWidget implements PreferredSizeWidget {
           ],
         ),
         actions: [
-          // Text buttons for menu items
           TextButton(
             onPressed: () {},
             child: const Text(
               'Our Story',
-              style: TextStyle(color: Colors.white),
             ),
           ),
           TextButton(
             onPressed: () {},
             child: const Text(
               'Photo Gallery',
-              style: TextStyle(color: Colors.white),
             ),
           ),
           TextButton(
             onPressed: () {},
             child: const Text(
               'Contact',
-              style: TextStyle(color: Colors.white),
             ),
           ),
         ],
@@ -51,12 +46,10 @@ class VineBar extends StatelessWidget implements PreferredSizeWidget {
             IconButton(
               icon: const Icon(FontAwesomeIcons.facebook),
               onPressed: () {},
-              color: Colors.white,
             ),
             IconButton(
               icon: const Icon(FontAwesomeIcons.instagram),
               onPressed: () {},
-              color: Colors.white,
             ),
           ],
         ),
