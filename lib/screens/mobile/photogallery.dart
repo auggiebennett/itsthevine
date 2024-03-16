@@ -7,7 +7,6 @@ class MobilePhotoGallery extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: const VineBar(),
       body: Padding(
         padding: const EdgeInsets.all(8.0),
         child: Column(

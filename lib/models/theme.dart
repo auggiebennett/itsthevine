@@ -29,6 +29,7 @@ ThemeData theme = ThemeData(
     scrolledUnderElevation: 0,
     backgroundColor: sagestoneGray,
     elevation: 0,
-    surfaceTintColor: linenMist,
+    toolbarHeight: 125,
+    centerTitle: true,
   ),
 );
