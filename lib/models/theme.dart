@@ -5,23 +5,36 @@ Color mistyTaupe = const Color(0xffD0C7BE);
 Color linenMist = const Color(0xffEEEDE1);
 
 ThemeData theme = ThemeData(
-  useMaterial3: false,
+  useMaterial3: true,
   scaffoldBackgroundColor: mistyTaupe,
+  iconButtonTheme: IconButtonThemeData(
+    style: ButtonStyle(
+      foregroundColor: MaterialStateProperty.all<Color>(linenMist),
+      overlayColor:
+          MaterialStateProperty.all<Color>(linenMist.withOpacity(.25)),
+    ),
+  ),
+  textButtonTheme: TextButtonThemeData(
+    style: ButtonStyle(
+      foregroundColor: MaterialStateProperty.all<Color>(linenMist),
+      overlayColor:
+          MaterialStateProperty.all<Color>(linenMist.withOpacity(.25)),
+    ),
+  ),
   cardTheme: CardTheme(
+    surfaceTintColor: Colors.transparent,
     color: sagestoneGray,
   ),
   appBarTheme: AppBarTheme(
+    scrolledUnderElevation: 0,
     backgroundColor: sagestoneGray,
     elevation: 0,
-    actionsIconTheme: IconThemeData(
-      color: mistyTaupe,
-    ),
-    toolbarTextStyle: TextStyle(
-      color: mistyTaupe,
-    ),
-    iconTheme: IconThemeData(
-      color: linenMist,
-    ),
     surfaceTintColor: linenMist,
+    shape: const BeveledRectangleBorder(
+      borderRadius: BorderRadius.vertical(
+        bottom: Radius.circular(10),
+        //right: Radius.circular(10),
+      ),
+    ),
   ),
 );

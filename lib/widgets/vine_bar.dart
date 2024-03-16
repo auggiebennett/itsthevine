@@ -1,4 +1,5 @@
 import "package:flutter/material.dart";
+import 'package:flutter/widgets.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 class VineBar extends StatelessWidget implements PreferredSizeWidget {
@@ -42,14 +43,24 @@ class VineBar extends StatelessWidget implements PreferredSizeWidget {
           ),
         ],
         leading: Row(
+          mainAxisSize: MainAxisSize.max,
+          crossAxisAlignment: CrossAxisAlignment.center,
+          mainAxisAlignment: MainAxisAlignment.center,
+          textBaseline: TextBaseline.alphabetic,
           children: [
-            IconButton(
-              icon: const Icon(FontAwesomeIcons.facebook),
-              onPressed: () {},
+            Container(
+              margin: const EdgeInsets.all(2.0),
+              child: IconButton(
+                icon: const Icon(FontAwesomeIcons.facebook),
+                onPressed: () {},
+              ),
             ),
-            IconButton(
-              icon: const Icon(FontAwesomeIcons.instagram),
-              onPressed: () {},
+            Container(
+              margin: const EdgeInsets.all(2.0),
+              child: IconButton(
+                icon: const Icon(FontAwesomeIcons.instagram),
+                onPressed: () {},
+              ),
             ),
           ],
         ),
