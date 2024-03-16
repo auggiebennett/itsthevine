@@ -1,6 +1,6 @@
 import "package:flutter/material.dart";
-
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:url_launcher/url_launcher_string.dart';
 
 class VineBar extends StatelessWidget implements PreferredSizeWidget {
   const VineBar({super.key});
@@ -21,42 +21,69 @@ class VineBar extends StatelessWidget implements PreferredSizeWidget {
             height: 125,
           ),
         ),
+        leadingWidth: 200,
+        leading: Row(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Container(
+              margin: const EdgeInsets.fromLTRB(4, 0, 16, 0),
+              child: IconButton(
+                onPressed: () =>
+                    launchUrlString('https://www.facebook.com/bakery.frosted'),
+                icon: const Icon(
+                  FontAwesomeIcons.facebook,
+                  size: 50,
+                ),
+              ),
+            ),
+            IconButton(
+              onPressed: () => launchUrlString(
+                  'https://www.instagram.com/thevinecoffeehousebakery/'),
+              icon: const Icon(
+                FontAwesomeIcons.instagram,
+                size: 50,
+              ),
+            ),
+          ],
+        ),
         actions: [
           TextButton(
             onPressed: () => Navigator.pushNamed(context, '/ourstory'),
             child: const Text(
               'Our Story',
-              style: TextStyle(fontSize: 25),
+              textAlign: TextAlign.center,
+              style: TextStyle(
+                height: 1.5,
+                fontSize: 25,
+                fontFamily: 'AdBhashitha',
+              ),
             ),
           ),
           TextButton(
             onPressed: () => Navigator.pushNamed(context, '/photogallery'),
             child: const Text(
               'Photo Gallery',
-              style: TextStyle(fontSize: 25),
+              textAlign: TextAlign.center,
+              style: TextStyle(
+                height: 1.5,
+                fontSize: 25,
+                fontFamily: 'AdBhashitha',
+              ),
             ),
           ),
           TextButton(
             onPressed: () => Navigator.pushNamed(context, '/contact'),
             child: const Text(
               'Contact',
-              style: TextStyle(fontSize: 25),
+              textAlign: TextAlign.center,
+              style: TextStyle(
+                height: 1.5,
+                fontSize: 25,
+                fontFamily: 'AdBhashitha',
+              ),
             ),
           ),
-          IconButton(
-            onPressed: () {},
-            icon: const Icon(
-              FontAwesomeIcons.instagram,
-              size: 36,
-            ),
-          ),
-          IconButton(
-            onPressed: () {},
-            icon: const Icon(
-              FontAwesomeIcons.facebook,
-              size: 36,
-            ),
-          ),
+          const SizedBox(width: 24)
         ],
       ),
     );

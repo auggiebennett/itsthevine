@@ -1,9 +1,4 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/rendering.dart';
-import 'package:flutter/widgets.dart';
-import 'package:itsthevine/screens/photogallery.dart';
-import 'package:itsthevine/widgets/vine_bar.dart';
 
 class DesktopHomePage extends StatefulWidget {
   const DesktopHomePage({super.key});
@@ -67,13 +62,13 @@ class _DesktopHomePageState extends State<DesktopHomePage> {
               ),
             ),
           ),
-          Align(
+          const Align(
             alignment: Alignment.topRight,
             child: Card(
               elevation: 10,
               color: Colors.yellow,
               margin: EdgeInsets.fromLTRB(0, 12, 24, 0),
-              child: Container(
+              child: SizedBox(
                 width: 200,
                 height: 400,
               ),

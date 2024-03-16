@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:itsthevine/widgets/vine_bar.dart';
 
 class MobileOurStory extends StatelessWidget {
   const MobileOurStory({super.key});

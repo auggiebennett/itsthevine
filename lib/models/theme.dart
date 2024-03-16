@@ -16,9 +16,12 @@ ThemeData theme = ThemeData(
   ),
   textButtonTheme: TextButtonThemeData(
     style: ButtonStyle(
-      foregroundColor: MaterialStateProperty.all<Color>(linenMist),
-      overlayColor:
-          MaterialStateProperty.all<Color>(linenMist.withOpacity(.25)),
+      textStyle:
+          const MaterialStatePropertyAll<TextStyle>(TextStyle(height: 1.2)),
+      foregroundColor: MaterialStatePropertyAll<Color>(linenMist),
+      overlayColor: MaterialStatePropertyAll<Color>(linenMist.withOpacity(.25)),
+      splashFactory: NoSplash.splashFactory,
+      mouseCursor: MaterialStateMouseCursor.textable,
     ),
   ),
   cardTheme: CardTheme(

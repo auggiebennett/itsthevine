@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:itsthevine/widgets/vine_bar.dart';
 
 class DesktopPhotoGallery extends StatelessWidget {
   const DesktopPhotoGallery({super.key});

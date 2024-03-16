@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:itsthevine/widgets/vine_bar.dart';
 
 class MobilePhotoGallery extends StatelessWidget {
   const MobilePhotoGallery({super.key});

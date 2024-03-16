@@ -14,6 +14,7 @@ dependencies:
     sdk: flutter
   font_awesome_flutter: ^10.7.0
   go_router: ^13.2.1
+  url_launcher: ^6.2.5
 
 dev_dependencies:
   flutter_lints: ^3.0.0
@@ -25,3 +26,8 @@ flutter:
   assets:
     - assets/images/
     - assets/thevine/
+    - assets/fonts/
+  fonts:
+    - family: AdBhashitha
+      fonts:
+        - asset: assets/fonts/AdBhashitha.ttf
