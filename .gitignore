@@ -7,7 +7,7 @@ build/
 # Firebase
 # Ignore sensitive files
 .firebaserc
-.firebase/
+
 
 # VS Code
 # Ignore VS Code specific files and folders
