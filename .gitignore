@@ -21,7 +21,7 @@ node_modules/
 # (based on your project structure)
 android/app/build.gradle
 ios/Runner.xcworkspace
-.env  # If you have a local environment file
+.env  #If you have a local environment file
 
 # Cache and temporary files
 .dart_tool/
