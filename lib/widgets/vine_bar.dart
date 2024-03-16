@@ -26,7 +26,7 @@ class VineBar extends StatelessWidget implements PreferredSizeWidget {
           TextButton(
             onPressed: () {},
             child: const Text(
-              'test', //Our story
+              'Our Story',
             ),
           ),
           TextButton(
