@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:itsthevine/screens/desktop/vine_bar.dart';
 
 class DesktopContact extends StatelessWidget {
   const DesktopContact({super.key});
@@ -6,6 +7,7 @@ class DesktopContact extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: DesktopVineBar(),
       backgroundColor: Colors.yellow,
       body: Padding(
         padding: const EdgeInsets.all(8.0),

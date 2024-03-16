@@ -3,7 +3,7 @@ import 'package:itsthevine/screens/desktop/ourstory.dart';
 
 import 'package:itsthevine/screens/mobile/ourstory.dart';
 import 'package:itsthevine/widgets/responsive_layout.dart';
-import 'package:itsthevine/widgets/vine_bar.dart';
+import 'package:itsthevine/screens/desktop/vine_bar.dart';
 
 class OurStory extends StatelessWidget {
   const OurStory({super.key});
@@ -11,7 +11,6 @@ class OurStory extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const Scaffold(
-      appBar: VineBar(),
       body: ResponsiveLayout(
         mobileBody: MobileOurStory(),
         desktopBody: DesktopOurStory(),

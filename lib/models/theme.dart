@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 
 Color sagestoneGray = const Color(0xff64685d);
 Color mistyTaupe = const Color(0xffD0C7BE);
@@ -34,5 +35,10 @@ ThemeData theme = ThemeData(
     elevation: 0,
     toolbarHeight: 125,
     centerTitle: true,
+  ),
+  drawerTheme: DrawerThemeData(
+    backgroundColor: sagestoneGray.withOpacity(0.75),
+    elevation: 0,
+    surfaceTintColor: Colors.transparent,
   ),
 );

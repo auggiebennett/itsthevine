@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:itsthevine/screens/desktop/vine_bar.dart';
 
 class DesktopPhotoGallery extends StatelessWidget {
   const DesktopPhotoGallery({super.key});
@@ -6,6 +7,7 @@ class DesktopPhotoGallery extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: const DesktopVineBar(),
       backgroundColor: Colors.red,
       body: Padding(
         padding: const EdgeInsets.all(8.0),

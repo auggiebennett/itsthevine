@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:itsthevine/screens/desktop/vine_bar.dart';
 
 class DesktopHomePage extends StatefulWidget {
   const DesktopHomePage({super.key});
@@ -11,6 +12,7 @@ class _DesktopHomePageState extends State<DesktopHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: DesktopVineBar(),
       body: Stack(
         children: [
           Expanded(

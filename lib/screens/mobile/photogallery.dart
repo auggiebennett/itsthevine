@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:itsthevine/screens/mobile/vine_bar.dart';
+import 'package:itsthevine/screens/mobile/vine_drawer.dart';
 
 class MobilePhotoGallery extends StatelessWidget {
   const MobilePhotoGallery({super.key});
@@ -6,6 +8,9 @@ class MobilePhotoGallery extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: MobileVineBar(),
+      drawer: VineDrawer(),
+      backgroundColor: Colors.red,
       body: Padding(
         padding: const EdgeInsets.all(8.0),
         child: Column(
