@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:itsthevine/screens/desktop/desktop_home.dart';
-import 'package:itsthevine/screens/mobile/mobile_home.dart';
+import 'package:itsthevine/screens/desktop/homepage.dart';
+import 'package:itsthevine/screens/mobile/homepage.dart';
+
 import 'package:itsthevine/widgets/responsive_layout.dart';
 
 class HomePage extends StatefulWidget {
@@ -15,8 +16,8 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     return const Scaffold(
       body: ResponsiveLayout(
-        mobileBody: MyMobileBody(),
-        desktopBody: MyDesktopBody(),
+        mobileBody: MobileHomePage(),
+        desktopBody: DesktopHomePage(),
       ),
     );
   }

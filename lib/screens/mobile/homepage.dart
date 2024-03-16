@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:itsthevine/widgets/vine_bar.dart';
 
-class MyMobileBody extends StatelessWidget {
-  const MyMobileBody({super.key});
+class MobileHomePage extends StatelessWidget {
+  const MobileHomePage({super.key});
 
   @override
   Widget build(BuildContext context) {

@@ -1,13 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:itsthevine/widgets/vine_bar.dart';
 
-class MyDesktopBody extends StatelessWidget {
-  const MyDesktopBody({super.key});
+class DesktopOurStory extends StatelessWidget {
+  const DesktopOurStory({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: const VineBar(),
+      backgroundColor: Colors.blue,
       body: Padding(
         padding: const EdgeInsets.all(8.0),
         child: Row(

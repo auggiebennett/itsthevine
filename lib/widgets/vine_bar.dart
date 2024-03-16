@@ -1,6 +1,8 @@
 import "package:flutter/material.dart";
 import 'package:flutter/widgets.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:go_router/go_router.dart';
+import 'package:itsthevine/screens/photogallery.dart';
 
 class VineBar extends StatelessWidget implements PreferredSizeWidget {
   const VineBar({super.key});
@@ -11,35 +13,32 @@ class VineBar extends StatelessWidget implements PreferredSizeWidget {
   @override
   Widget build(BuildContext context) {
     return PreferredSize(
-      preferredSize: const Size.fromHeight(500),
+      preferredSize: preferredSize,
       child: AppBar(
         title: Row(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Image.asset(
-              'assets/images/logo.png',
-              height: 100,
+            TextButton(
+              onPressed: () => context.go('/'),
+              child: Image.asset(
+                'assets/images/logo.png',
+                height: 100,
+              ),
             ),
           ],
         ),
         actions: [
           TextButton(
-            onPressed: () {},
-            child: const Text(
-              'Our Story',
-            ),
+            onPressed: () => context.go('/ourstory'),
+            child: const Text('Our Story'),
           ),
           TextButton(
-            onPressed: () {},
-            child: const Text(
-              'Photo Gallery',
-            ),
+            onPressed: () => context.go('/photogallery'),
+            child: const Text('Photo Gallery'),
           ),
           TextButton(
-            onPressed: () {},
-            child: const Text(
-              'Contact',
-            ),
+            onPressed: () => context.go('/contact'),
+            child: const Text('Contact'),
           ),
         ],
         leading: Row(

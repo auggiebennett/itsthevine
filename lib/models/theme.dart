@@ -30,11 +30,5 @@ ThemeData theme = ThemeData(
     backgroundColor: sagestoneGray,
     elevation: 0,
     surfaceTintColor: linenMist,
-    shape: const BeveledRectangleBorder(
-      borderRadius: BorderRadius.vertical(
-        bottom: Radius.circular(10),
-        //right: Radius.circular(10),
-      ),
-    ),
   ),
 );
