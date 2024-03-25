@@ -1,4 +1,5 @@
 import "package:flutter/material.dart";
+import 'package:flutter_svg/svg.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:url_launcher/url_launcher_string.dart';
 
@@ -16,8 +17,8 @@ class DesktopVineBar extends StatelessWidget implements PreferredSizeWidget {
         automaticallyImplyLeading: false,
         title: IconButton(
           onPressed: () => Navigator.pushNamed(context, '/'),
-          icon: Image.asset(
-            'assets/images/logo.png',
+          icon: SvgPicture.asset(
+            'assets/images/logo.svg',
             height: 125,
           ),
         ),

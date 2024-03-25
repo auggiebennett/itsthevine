@@ -1,4 +1,5 @@
 import "package:flutter/material.dart";
+import "package:flutter_svg/svg.dart";
 import "package:font_awesome_flutter/font_awesome_flutter.dart";
 
 class MobileVineBar extends StatelessWidget implements PreferredSizeWidget {
@@ -14,8 +15,8 @@ class MobileVineBar extends StatelessWidget implements PreferredSizeWidget {
       child: AppBar(
         title: IconButton(
           onPressed: () => Navigator.pushNamed(context, '/'),
-          icon: Image.asset(
-            'assets/images/logo.png',
+          icon: SvgPicture.asset(
+            'assets/images/logo.svg',
             height: 125,
           ),
         ),
