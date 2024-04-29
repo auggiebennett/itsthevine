@@ -12,7 +12,7 @@ class _DesktopHomePageState extends State<DesktopHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: DesktopVineBar(),
+      appBar: const DesktopVineBar(),
       body: Stack(
         children: [
           Expanded(

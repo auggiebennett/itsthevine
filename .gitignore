@@ -3,6 +3,9 @@
 build/
 .flutter-flow/
 .dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.metadata
 
 # Firebase
 # Ignore sensitive files
@@ -25,3 +28,4 @@ launch.json
 # Additional Flutter ignore (optional)
 # Ignore pubspec.lock file 
 pubspec.lock
+.flutter-plugins-dependencies

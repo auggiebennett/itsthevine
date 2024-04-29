@@ -22,7 +22,7 @@ class MobileVineBar extends StatelessWidget implements PreferredSizeWidget {
         ),
         leadingWidth: 64,
         leading: Container(
-          margin: EdgeInsets.all(12),
+          margin: const EdgeInsets.all(12),
           child: IconButton(
             icon: const Icon(
               FontAwesomeIcons.bars,

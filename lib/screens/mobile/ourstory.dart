@@ -8,8 +8,8 @@ class MobileOurStory extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: MobileVineBar(),
-      drawer: VineDrawer(),
+      appBar: const MobileVineBar(),
+      drawer: const VineDrawer(),
       backgroundColor: Colors.blue,
       body: Padding(
         padding: const EdgeInsets.all(8.0),

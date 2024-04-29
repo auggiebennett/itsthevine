@@ -7,7 +7,7 @@ class DesktopContact extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: DesktopVineBar(),
+      appBar: const DesktopVineBar(),
       backgroundColor: Colors.yellow,
       body: Padding(
         padding: const EdgeInsets.all(8.0),
