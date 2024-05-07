@@ -2,9 +2,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Montserrat:wght@400;600;700&display=swap");
 
 @font-face {
-  font-family: 'Adhashitha';
-  src: url('assets/fonts/AdBhashitha.woff2') format('woff2'),
-      url('assets/fonts/AdBhashitha.woff') format('woff');
+  font-family: 'AdBhashitha';
+  src: url('AdBhashitha.eot');
+  src: url('AdBhashitha.eot?#iefix') format('embedded-opentype'),
+      url('AdBhashitha.woff2') format('woff2'),
+      url('AdBhashitha.woff') format('woff'),
+      url('AdBhashitha.ttf') format('truetype'),
+      url('AdBhashitha.svg#AdBhashitha') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -12,12 +16,18 @@
 
 @font-face {
   font-family: 'Le Jour Script Personal Use';
-  src: url('assets/fonts/LeJour-Script.woff2') format('woff2'),
-      url('assets/fonts/LeJour-Script.woff') format('woff');
+  src: url('LeJour-Script.eot');
+  src: url('LeJour-Script.eot?#iefix') format('embedded-opentype'),
+      url('LeJour-Script.woff2') format('woff2'),
+      url('LeJour-Script.woff') format('woff'),
+      url('LeJour-Script.ttf') format('truetype'),
+      url('LeJour-Script.svg#LeJour-Script') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
+
+
 
 /*=============== VARIABLES CSS ===============*/
 :root {
@@ -25,13 +35,17 @@
 
   /*========== Colors ==========*/
   /*Color mode HSL(hue, saturation, lightness)*/
-  --first-color: #64685D;
-  --first-color-alt: #D0C7BE;
-  --title-color: hsl(0, 0%, 40%);
-  --text-color: hsl(0, 0%, 25%);
+  --linen-mist: #EEEDE1;
+  --misty-taupe: #D0C7BE;
+  --sagestone-gray: #64685D;
+  
+  --first-color: var(--sagestone-gray);
+  --first-color-alt: var(--linen-mist);
+  --title-color: var(--sagestone-gray);
+  --text-color: var(--sagestone-gray);
   --text-color-light: hsl(0, 0%, 50%);
   --black-color: hsl(0, 0%, 6%);
-  --body-color:  #EEEDE1;
+  --body-color:  var(--misty-taupe);
   --container-color: hsl(0, 0%, 10%);
 
   /*========== Font and typography ==========*/
@@ -194,9 +208,9 @@ img {
     background-color: hsla(0, 0%, 6%, .2);
     backdrop-filter: blur(16px);
     -webkit-backdrop-filter: blur(16px); /* For safari */
-    width: 80%;
+    /* width: 70%; */
     height: 100%;
-    padding: 6rem 3rem 0;
+    /* padding: 6rem 3rem 0; */
     transition: right .4s;
   }
 }
@@ -645,7 +659,7 @@ img {
 }
 
 /*=============== SCROLL BAR ===============*/
-::-webkit-scrollbar{
+/* ::-webkit-scrollbar{
   width: .6rem;
   background-color: hsl(28, 12%, 15%);
 }
@@ -656,7 +670,7 @@ img {
 
 ::-webkit-scrollbar-thumb:hover{
   background-color: hsl(28, 12%, 35%);
-}
+} */
 
 /*=============== SCROLL UP ===============*/
 .scrollup{
