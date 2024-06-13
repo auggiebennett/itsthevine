@@ -1,13 +1,16 @@
-import React from 'react';
+import {Header} from './components/Header.jsx';
+import { Footer } from './components/Footer.jsx';
+import { Home } from './components/Home.jsx';
+import './App.css';
 
-const App = () => {
-  
+export default function MyApp() {
   return (
     <div>
-      <Header/>
-      <h1>Hello World</h1>
+      <Header />
+      <Home/>
+      <Footer />
+      <script src="src/scripts/scrollreveal.min.js"></script>
+      <script src="src/scripts/main.js"></script>
     </div>
   );
-};
-
-export default App;
+}

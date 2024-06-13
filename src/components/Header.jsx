@@ -1,41 +1,35 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React, { useEffect, useState } from 'react';
 
-const Header = () => {
+export const Header = () => {
   return (
-    <header class="header" id="header">
-         <nav class="nav container">
-            <a href="#" class="nav__logo">
-               <span class="title">
+    <header className="header" id="header">
+         <nav className="nav container">
+            <a href="#" className="nav__logo">
+               <span className="title">
                   The Vine
                </span>
-               <span class="subtitle">
+               <span className="subtitle">
                   Coffeehouse + Bakery
                </span>
             </a>
 
-            <div class="nav__menu" id="nav-menu">
-               <ul class="nav__list">
-                  <li class="nav__item">
-                     <a href="#home" class="nav__link">Home</a>
+            <div className="nav__menu" id="nav-menu">
+               <ul className="nav__list">
+                  <li className="nav__item">
+                     <a href="#home" className="nav__link active-link">Home</a>
                   </li>
                   
-                  <li class="nav__item">
-                     <a href="#about" class="nav__link">About Us</a>
+                  <li className="nav__item">
+                     <a href="#about" className="nav__link">About Us</a>
                   </li>
                   
-                  <li class="nav__item">
-                     <a href="#visit" class="nav__link">Location</a>
+                  <li className="nav__item">
+                     <a href="#visit" className="nav__link">Location</a>
                   </li>                
                </ul>
-
-               <div class="nav__close" id="nav-close">
-                  <i class="ri-close-line"></i>
-               </div>
-               </div>
-
-            <div class="nav__toggle" id="nav-toggle">
-               <i class="ri-menu-fill"></i>
+            </div>
+            <div className="nav__toggle" id="nav-toggle">
+               <i className="ri-menu-fill"></i>
             </div>
          </nav>
       </header>
